@@ -5,7 +5,7 @@ body {
 
 .background {
 
-    position: fixed;
+    position: absolute;
     width: 100%;
     height: 100%;
     background: url("background.jpg");
@@ -25,6 +25,7 @@ body {
 .content {
 
     position: absolute;
+    display: flex;
     height: 100%;
     left: 0;
     top: 0;
@@ -32,7 +33,41 @@ body {
     backdrop-filter: blur(16px);
 }
 
-.content .title {
+.content .tab .button {
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 12px;
+    width: 52px;
+    height: 52px;
+    background: white;
+    border-radius: 10px;
+}
+
+.content .tab .button:hover {
+
+    background: rgb(220, 220, 220);
+}
+
+.content .tab .button img {
+
+    width: 64%;
+    height: 64%;
+}
+
+.content .vline {
+
+    width: 1px;
+    background: gray;
+}
+
+.content .main {
+
+    overflow-y: scroll;
+}
+
+.content .main .title {
 
     padding: 60px 120px;
     display: flex;
@@ -41,7 +76,7 @@ body {
     gap: 16px;
 }
 
-.content .title .icon {
+.content .main .title .icon {
 
     width: 120px;
     height: 120px;
@@ -51,20 +86,41 @@ body {
     box-shadow: 0 0 12px lightgray;
 }
 
-.content .title .text {
+.content .main .title .text {
 
     font-size: 36px;
 }
 
-.content .message {
+.content .main .hline {
+
+    margin: 52px 32px;
+    height: 1px;
+    background: gray;
+}
+
+.content .main .header {
+
+    margin: 48px;
+    font-size: 24px;
+    text-align: center;
+}
+
+.content .main .text {
 
     font-size: 16px;
     text-align: center;
 }
 
-.hline {
+.content .main table {
 
-    margin: 48px;
-    height: 1px;
-    background: black;
+    margin: 6px auto;
+    border-collapse: collapse;
 }
+
+.content .main table td {
+
+    border: solid 1px gray;
+    padding: 2px 72px;
+    text-align: center;
+}
+
