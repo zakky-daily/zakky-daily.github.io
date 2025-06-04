@@ -1,0 +1,70 @@
+body {
+
+    margin: 0;
+}
+
+.background {
+
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    background: url("background.jpg");
+    background-size: cover;
+    background-position: center 70%;
+}
+
+.background .description {
+
+    position: absolute;
+    padding: 8px;
+    right: 0;
+    bottom: 0;
+    color: white;
+}
+
+.content {
+
+    position: absolute;
+    height: 100%;
+    left: 0;
+    top: 0;
+    background: rgba(255, 255, 255, 0.88);
+    backdrop-filter: blur(16px);
+}
+
+.content .title {
+
+    padding: 60px 120px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 16px;
+}
+
+.content .title .icon {
+
+    width: 120px;
+    height: 120px;
+    background: url("icon.jpg");
+    background-size: cover;
+    border-radius: 50%;
+    box-shadow: 0 0 12px lightgray;
+}
+
+.content .title .text {
+
+    font-size: 36px;
+}
+
+.content .message {
+
+    font-size: 16px;
+    text-align: center;
+}
+
+.hline {
+
+    margin: 48px;
+    height: 1px;
+    background: black;
+}
