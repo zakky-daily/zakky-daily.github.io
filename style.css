@@ -144,6 +144,7 @@ body {
     border-radius: 32px;
     background: transparent;
     transition: 0.2s;
+    pointer-events: none;
 }
 
 .content .main .links .link:hover::after {
