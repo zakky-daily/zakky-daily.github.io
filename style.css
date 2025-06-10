@@ -73,6 +73,13 @@ body {
     padding: 20px;
 }
 
+.content .main .text {
+
+    margin: 20px 0;
+    font-size: 16px;
+    text-align: center;
+}
+
 .content .main .hline {
 
     width: 100%;
@@ -112,10 +119,52 @@ body {
     text-align: center;
 }
 
-.content .main .text {
+.content .main .links {
 
-    margin: 50px 0;
-    font-size: 16px;
+    margin: 36px 0;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    gap: 12px;
+}
+
+.content .main .links .link {
+
+    border-radius: 32px;
+    transition: 0.2s;
+}
+
+.content .main .links .link:hover {
+
+    background: rgba(0, 0, 0, 0.1);
+}
+
+.content .main .links .link .button {
+
+    display: block;
+    padding: 8px;
+}
+
+.content .main .links .link .button .frame {
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 180px;
+    height: 120px;
+    box-shadow: 0 0 12px rgba(0, 0, 0, 0.05);
+    border-radius: 24px;
+}
+
+.content .main .links .link .button .frame img {
+
+    width: 60px;
+    height: 60px;
+}
+
+.content .main .links .link .button .label {
+
+    margin-top: 4px;
     text-align: center;
 }
 
