@@ -5,58 +5,55 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-  <title>zakky-daily のページ！</title>
+  <title>zakky-daily の開発記</title>
+
+  <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+  <script type="text/javascript">
+    function Marquee() {
+      const $message = $('.content .message');
+      const $inner = $('.content .message .inner');
+      $inner.css({'display': 'block', 'translate': $message.width() + 'px'});
+      $inner.animate({'translate': -$inner.width() + 'px'}, 30000, 'linear', Marquee);
+    }
+    $(window).on('load', () => {
+      Marquee();
+    });
+  </script>
 
   <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
-  <div class="background">
-    <div class="description">Photo: Sekiya, Niigata 2024.8.17</div>
+  <header>
+    <a href="#">トップ</a>
+    <a href="#">プロフィール</a>
+    <a href="#">制作物一覧</a>
+    <a href="#">Unity</a>
+    <a href="#">Web</a>
+    <a href="#">VR</a>
+    <a href="#">AtCoder</a>
+    <a href="#">Music</a>
+    <a href="#">各種リンク</a>
+  </header>
+  <div class="topic">
+    <div>
+
+    </div>
   </div>
   <div class="content">
-    <div class="menu">
-      <a href="./" class="button"><img src="menu.png"></a>
-      <a href="./" class="button"><img src="home.png"></a>
-      <a href="./" class="button"><img src="profile.png"></a>
+    <div class="user">
+      <div class="icon"></div>
+      <div class="text">zakky-dailyの開発記</div>
     </div>
-    <div class="main">
-      <div class="title">
-        <div class="icon"></div>
-        <div class="text">zakky-daily のページ！</div>
+    <div class="message">
+      <div class="inner">
+        はじめまして！このページはzakky-dailyの活動記録をまとめたいわゆるポートフォリオと呼ばれるものです。是非ゆっくりしていってください。
       </div>
-      <div class="text">
-        はじめまして！！<br>
-        このサイトは zakky-daily の活動記録をまとめたいわゆる<br>
-        ポートフォリオと呼ばれるものです。<br>
-        ゆっくりしていってね！！！
-      </div>
-      <div class="links">
-        <div class="link">
-          <a href="./" class="button">
-            <div style="background: white;" class="frame"><img src="profile.png"></div>
-            <div class="label">プロフィール</div>
-          </a>
-        </div>
-        <div class="link">
-          <a href="https://github.com/zakky-daily" target="_blank" class="button">
-            <div style="background: rgb(38, 41, 46);" class="frame"><img src="github.png"></div>
-            <div class="label">GitHub</div>
-          </a>
-        </div>
-        <div class="link">
-          <a href="https://qiita.com/zakky_daily" target="_blank" class="button">
-            <div style="background: rgb(116, 195, 56);" class="frame"><img src="qiita.png"></div>
-            <div class="label">Qiita</div>
-          </a>
-        </div>
-      </div>
-      <div class="hline"></div>
     </div>
-    <div class="show-change">
-      <a href="./" class="button"><img src="back.png"></a>
+    <div class="button-list">
+      <a href="#">プロフィール</a>
+      <a href="#">制作物一覧</a>
     </div>
   </div>
 </body>
-
 </html>
