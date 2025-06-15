@@ -1,0 +1,51 @@
+.topic-sea {
+
+    background: url("background.jpg");
+    background-size: cover;
+    background-position: center 60%;
+}
+
+.topic-sea .content .caption {
+    position: absolute;
+    display: flex;
+    align-items: center;
+    gap: 7px;
+    right: 0;
+    bottom: 0;
+    padding: 2px 16px;
+    font-size: 18px;
+}
+
+.topic-sea .content .caption img {
+    width: 40px;
+    height: 40px;
+}
+
+.topic-meta-quest-diary {
+
+    background: url("meta-quest-diary.jpg");
+    background-size: cover;
+    background-position: center 72%;
+}
+
+.topic-meta-quest-diary .content .header {
+    position: absolute;
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    padding: 8px 14px;
+    font-size: 24px;
+    letter-spacing: 0.5px;
+}
+
+.topic-meta-quest-diary .content .header img {
+    width: 40px;
+    height: 40px;
+}
+
+.topic-ever {
+
+    background: url("ever.jpg");
+    background-size: cover;
+    background-position: center 35%;
+}

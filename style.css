@@ -1,14 +1,13 @@
 @import url('https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@100..900&family=Playwrite+US+Trad:wght@100..400&display=swap');
 
 :root {
-    --white: rgb(240, 240, 240)
+    --white: 240, 240, 240
 }
 
 * {
-    font-family: "Noto Sans JP", sans-serif;
-    font-weight: 300;
-    font-style: normal;
-    color: var(--white);
+    font-family: 'メイリオ', 'Meiryo', 'Hiragino Kaku Gothic ProN', 'ヒラギノ角ゴ Pro W2', sans-serif;
+    color: rgb(var(--white));
+    font-size: 16px;
 }
 
 body {
@@ -48,8 +47,8 @@ header a:hover {
 
 .main .topics {
     position: relative;
-    height: 440px;
-    border: solid 6px rgb(44, 44, 44);
+    aspect-ratio: 4.05;
+    margin: 6px 32px;
 }
 
 .main .topics .mask {
@@ -61,7 +60,7 @@ header a:hover {
 }
 
 .main .topics .mask::-webkit-scrollbar{
-  display: none;
+    display: none;
 }
 
 .main .topics .mask .frame {
@@ -78,42 +77,52 @@ header a:hover {
     overflow: hidden;
 }
 
-.main .topics .mask .fixed .topic{
+.main .topics .mask .fixed .topic {
     position: absolute;
     width: 100%;
     height: 100%;
     overflow: hidden;
 }
 
-.main .topics .mask .fixed .topic .content {
+.main .topics .mask .fixed .topic .frame {
     height: 100%;
 }
 
-.main .topics .mask .topic .content .background {
+.main .topics .mask .fixed .topic .frame .content {
+    position: relative;
     width: 100%;
-    height: 100%;
-    object-fit: cover;
+    height: calc(100% - 28px);
 }
 
-.main .scroll-link {
-    display: flex;
-    justify-content: center;
-    gap: 12px;
-    margin: 8px 0;
+.main .topics .scroll-link {
+    position: absolute;
     width: 100%;
+    height: 28px;
     bottom: 0;
+    transition: 0.2s;
 }
 
-.main .scroll-link .circle {
-    width: 16px;
-    height: 16px;
-    background: rgb(96, 96, 96);
-    border-radius: 50%;
+.main .topics .scroll-link:hover {
+    background: rgba(16, 16, 16, 0.6);
+}
+
+.main .topics .scroll-link .frame {
+    display: flex;
+    align-items: center;
+    gap: 14px;
+    margin: 0 28%;
+    height: 100%;
+}
+
+.main .topics .scroll-link .frame .button {
+    width: 100%;
+    height: 4px;
+    background: rgba(var(--white), 0.35);
     cursor: pointer;
 }
 
-.main .scroll-link .active-circle {
-    background: var(--white);
+.main .topics .scroll-link .frame .active-button {
+    background: rgb(var(--white));
 }
 
 .main .user {
@@ -135,6 +144,8 @@ header a:hover {
 .main .user .text {
     font-size: 32px;
     letter-spacing: 1px;
+    font-family: "Noto Sans JP", sans-serif;
+    font-weight: 300;
 }
 
 .main .message {
@@ -160,7 +171,7 @@ header a:hover {
 .main .button-list a {
     display: block;
     padding: 8px 40px;
-    border: solid 1px var(--white);
+    border: solid 1px rgb(var(--white));
     border-radius: 4px;
     text-decoration: none;
 }
