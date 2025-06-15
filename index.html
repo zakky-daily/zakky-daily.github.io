@@ -10,6 +10,7 @@
   <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
   <script src="content.js"></script>
 
+  <link rel="stylesheet" href="common.css">
   <link rel="stylesheet" href="style.css">
   <link rel="stylesheet" href="topics.css">
 </head>
@@ -28,40 +29,29 @@
   </header>
   <div class="main">
     <div class="topics">
-      <div class="mask">
-        <div class="range"></div>
-        <div class="fixed">
-          <div class="topic">
-            <div class="frame topic-sea">
-              <div class="content">
-                <div class="caption">
-                  <img src="camera.png">新潟県新潟市にて。2024年8月17日
-                </div>
-              </div>
-            </div>
-          </div>
-          <div class="topic">
-            <div class="frame topic-meta-quest-diary">
-              <div class="content">
-                <div class="header">
-                  <img src="meta.png">Meta Quest 体験記
-                </div>
-              </div>
-            </div>
-          </div>
-          <div class="topic">
-            <div class="frame topic-ever">
-
+      <div class="scroll-frame">
+        <div class="topic topic-sea">
+          <div class="content">
+            <div class="caption">
+              <img src="camera.png">
+              <span>2024年8月17日。新潟県新潟市にて</span>
             </div>
           </div>
         </div>
-      </div>
-      <div class="scroll-link">
-        <div class="frame">
-          <div class="button active-button"></div>
-          <div class="button"></div>
-          <div class="button"></div>
+        <div class="topic topic-meta-quest-diary">
+          <div class="content">
+            <div class="title">
+              <img src="meta.png">
+              <span>Meta Quest 体験記</span>
+            </div>
+            <div class="description">
+              <span>VRは世の中に受け入れられるのか？</span>
+              <div class="vline"></div>
+              <a href="">体験記録</a>
+            </div>
+          </div>
         </div>
+        <div class="topic topic-ever"></div>
       </div>
     </div>
     <div class="user">
