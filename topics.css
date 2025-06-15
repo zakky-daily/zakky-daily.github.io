@@ -39,12 +39,12 @@
 
 .topic-meta-quest-diary .content .title img {
     margin-right: 10px;
-    height: 40px;
+    height: 36px;
     vertical-align: middle;
 }
 
 .topic-meta-quest-diary .content .title span {
-    font-size: 32px;
+    font-size: 28px;
     letter-spacing: 0.5px;
 }
 
@@ -58,13 +58,13 @@
 }
 
 .topic-meta-quest-diary .content .description span {
-    font-size: 26px;
+    font-size: 36px;
 }
 
 .topic-meta-quest-diary .content .description .vline {
     margin: 0 10px;
     width: 2.5px;
-    height: 48px;
+    height: 52px;
     background: rgb(240, 240, 240);
 }
 
