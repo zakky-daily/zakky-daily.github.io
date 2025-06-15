@@ -8,17 +8,7 @@
   <title>zakky-daily の開発記</title>
 
   <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
-  <script type="text/javascript">
-    function Marquee() {
-      const $message = $('.content .message');
-      const $inner = $('.content .message .inner');
-      $inner.css({'display': 'block', 'translate': $message.width() + 'px'});
-      $inner.animate({'translate': -$inner.width() + 'px'}, 30000, 'linear', Marquee);
-    }
-    $(window).on('load', () => {
-      Marquee();
-    });
-  </script>
+  <script src="content.js"></script>
 
   <link rel="stylesheet" href="style.css">
 </head>
@@ -33,14 +23,36 @@
     <a href="#">VR</a>
     <a href="#">AtCoder</a>
     <a href="#">Music</a>
-    <a href="#">各種リンク</a>
+    <a href="#">Contact</a>
   </header>
-  <div class="topic">
-    <div>
-
+  <div class="main">
+    <div class="topics">
+      <div class="mask">
+        <div class="frame"></div>
+        <div class="fixed">
+          <div class="topic sea-photo">
+            <div class="content">
+              <img src="background.jpg" class="background" style="object-position: center 60%;">
+            </div>
+          </div>
+          <div class="topic">
+            <div class="content">
+              <img src="meta-quest-diary.jpg" class="background" style="filter: brightness(0.8)">
+            </div>
+          </div>
+          <div class="topic">
+            <div class="content">
+              <img src="ever.jpg" class="background">
+            </div>
+          </div>
+        </div>
+      </div>
     </div>
-  </div>
-  <div class="content">
+    <div class="scroll-link">
+      <div class="circle active-circle"></div>
+      <div class="circle"></div>
+      <div class="circle"></div>
+    </div>
     <div class="user">
       <div class="icon"></div>
       <div class="text">zakky-dailyの開発記</div>
@@ -54,6 +66,16 @@
       <a href="#">プロフィール</a>
       <a href="#">制作物一覧</a>
     </div>
+    <footer>
+      <div class="vline"></div>
+      <div class="content">
+        <div class="link">
+          <a href="https://github.com/zakky-daily" target="_blank"><img src="github.png"></a>
+          <a href="https://qiita.com/zakky_daily" target="_blank"><img src="qiita.png"></a>
+        </div>
+        <div class="copyright">©︎ 2025 zakky-daily All rights reserved.</div>
+      </div>
+    </footer>
   </div>
 </body>
 </html>
