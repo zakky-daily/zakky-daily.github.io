@@ -45,21 +45,27 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    gap: 16px;
+    gap: 3px;
 }
 
 .main .user .icon {
-    width: 88px;
-    height: 88px;
+    width: 92px;
+    height: 92px;
     background: url("icon.jpeg");
     background-size: cover;
     border-radius: 50%;
+    margin-right: 12px;
 }
 
 .main .user .text {
     font-size: 34px;
     letter-spacing: 0.5px;
     font-weight: 300;
+}
+
+.main .user .favicon {
+    width: 52px;
+    height: 52px;
 }
 
 .main .message {
