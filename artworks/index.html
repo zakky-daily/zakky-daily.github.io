@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>制作物一覧｜zakky-dailyの開発記</title>
+
+  <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+  <script src="content.js"></script>
+
+  <link rel="stylesheet" href="../common.css">
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="items.css">
+</head>
+
+<body>
+  <header>
+    <a href="..">ホーム</a>
+    <a href="../profile">プロフィール</a>
+    <a href="">制作物一覧</a>
+    <a href="">Unity</a>
+    <a href="">Web</a>
+    <a href="">VR</a>
+    <a href="">AtCoder</a>
+    <a href="">Music</a>
+    <a href="">Contact</a>
+  </header>
+  <div class="main">
+    <div class="title">
+      <img src="../icons/game.png" class="icon">
+      <span>制作物一覧</span>
+    </div>
+    <div class="items">
+      <div class="item item-unity">
+        <div class="header" onclick="ExpandItem(this)">
+          <img src="../logos/unity.png" class="icon">
+          <span>Unity</span>
+          <img src="../icons/arrow.png" class="arrow">
+        </div>
+        <div class="detail">
+          <div class="vline"></div>
+          <div class="message">
+            我がプログラミング人生の一丁目一番地。
+          </div>
+          <div class="nolink">
+            まだ作成記録はありません
+          </div>
+        </div>
+      </div>
+      <div class="item item-vr">
+        <div class="header"  onclick="ExpandItem(this)">
+          <img src="../icons/vr.png" class="icon">
+          <span>VR</span>
+          <img src="../icons/arrow.png" class="arrow">
+        </div>
+        <div class="detail">
+          <div class="vline"></div>
+          <div class="message">
+            嫌いだけど興味の惹かれる業界について、<br>
+            確かな技術力と経験を得てから<br>
+            批判も、肯定もしたいと思った。
+          </div>
+          <div class="links">
+            <div class="link link-meta-quest-diary">
+              <img src="meta-quest-diary/header.jpg">
+              <div class="title">Meta Quest 体験記</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <footer>
+    <div class="vline"></div>
+    <div class="content">
+      <div class="link">
+        <a href="https://github.com/zakky-daily" target="_blank"><img src="../logos/github.png"></a>
+        <a href="https://qiita.com/zakky_daily" target="_blank"><img src="../logos/qiita.png"></a>
+      </div>
+      <div class="copyright">©︎ 2025 zakky-daily All rights reserved.</div>
+    </div>
+  </footer>
+</body>
+</html>

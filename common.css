@@ -29,51 +29,67 @@ header a:hover {
     text-decoration: underline;
 }
 
+
+
 .main {
-    position: absolute;
-    width: 100%;
-    height: fit-content;
-    left: 0;
-    top: 56px;
+    padding: 56px 15% 0 15%;
 }
 
-.main footer {
-    margin-top: 48px;
+.main .title {
+    
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 14px;
+    margin: 24px 0;
 }
 
-.main footer .vline {
+.main .title .icon {
+    width: 80px;
+    height: 80px;
+}
+
+.main .title span {
+    font-size: 36px;
+}
+
+
+
+
+footer .vline {
+    margin-top: 52px;
     height: 1px;
     background: rgb(160, 160, 160);
 }
 
-.main footer .content {
+footer .content {
     padding: 10px 0;
 }
 
-.main footer .link {
+footer .link {
     margin: 20px 0;
     display: flex;
     justify-content: center;
     gap: 32px;
 }
 
-.main footer .link a {
+footer .link a {
     display: flex;
     align-items: center;
     justify-content: center;
 }
 
-.main footer .link a img {
+footer .link a img {
     width: 48px;
     height: 48px;
     transition: 0.2s;
 }
 
-.main footer .link a:hover img {
+footer .link a:hover img {
     transform: scale(1.2);
 }
 
-.main footer .copyright {
+footer .copyright {
     margin: 20px 0;
     text-align: center;
 }

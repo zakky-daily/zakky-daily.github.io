@@ -1,0 +1,102 @@
+.main .items {
+    margin: 0 0 48px 0;
+}
+
+.main .items .item {
+    margin: 32px 0;
+    border: solid 1px rgb(160, 160, 160);
+}
+
+.main .items .item .header {
+    display: flex;
+    align-items: center;
+    box-sizing: border-box;
+    padding: 7px 66px;
+    width: 100%;
+    cursor: pointer;
+    user-select: none;
+}
+
+.main .items .item .header .icon {
+    height: 68px;
+    margin-right: 16px;
+}
+
+.main .items .item .header span {
+    font-size: 38px;
+}
+
+.main .items .item .header .arrow {
+    width: 48px;
+    margin-left: auto;
+    transition: 0.2s;
+}
+
+.main .items .item-active .header .arrow {
+    transform: scaleY(-1);
+}
+
+.main .items .item .detail {
+    height: 0px;
+    overflow: hidden;
+    transition: 0.2s;
+}
+
+.main .items .item-active .detail {
+    height: fit-content;
+}
+
+.main .items .item .detail .vline {
+    width: 100%;
+    height: 1px;
+    background: rgb(160, 160, 160);
+}
+
+.main .items .item .detail .message {
+    margin: 40px 0;
+    text-align: center;
+}
+
+.main .items .item .detail .links {
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    gap: 32px;
+    margin: 40px;
+}
+
+.main .items .item .detail .links .link {
+    padding: 12px;
+    width: 240px;
+    border-radius: 18px;
+    transition: 0.2s;
+}
+
+.main .items .item .detail .links .link:hover {
+    background: rgb(255, 255, 255, 0.1);
+    cursor: pointer;
+}
+
+.main .items .item .detail .links .link img {
+    width: 100%;
+    height: 180px;
+    border-radius: 12px;
+    border: solid 1px rgb(200, 200, 200);
+}
+
+.main .items .item .detail .links .link .title {
+    margin: 0px;
+    font-size: 20px;
+    text-align: center;
+    text-overflow: ellipsis;
+}
+
+.main .items .item .detail .nolink {
+    
+    margin: 72px 40px;
+    font-size: 20px;
+    color: gray;
+    text-align: center;
+}
+
+

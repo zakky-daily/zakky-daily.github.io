@@ -1,19 +1,27 @@
+.main {
+    padding-left: 0;
+    padding-right: 0;
+}
+
 .main .topics .scroll-frame {
     display: flex;
-    gap: 14px;
+    gap: 12px;
     width: 100%;
-    aspect-ratio: 4.05;
+    aspect-ratio: 4.2;
     min-height: 240px;
     overflow-x: scroll;
     scroll-snap-type: x mandatory;
-    scrollbar-color: rgb(240, 240, 240, 0.5) transparent;
+}
+
+.main .topics .scroll-frame::-webkit-scrollbar{
+    display: none;
 }
 
 .main .topics .scroll-frame::before {
     content: "";
     flex-shrink: 0;
     display: block;
-    width: 42px;
+    width: 60px;
     height: 100%;
 }
 
@@ -21,13 +29,13 @@
     content: "";
     flex-shrink: 0;
     display: block;
-    width: 42px;
+    width: 60px;
     height: 100%;
 }
 
 .main .topics .scroll-frame .topic {
     scroll-snap-align: center;
-    min-width: calc(100% - 56px);
+    min-width: calc(100% - 72px);
     height: 100%;
 }
 
@@ -40,55 +48,58 @@
 
 
 
-.main .user {
+.main .info {
+    padding: 0 10% 0 10%;
+}
+
+.main .info .user {
     margin: 36px 0;
     display: flex;
     align-items: center;
     justify-content: center;
-    gap: 3px;
 }
 
-.main .user .icon {
+.main .info .user .icon {
     width: 92px;
     height: 92px;
-    background: url("icon.jpeg");
-    background-size: cover;
     border-radius: 50%;
-    margin-right: 12px;
+    margin-right: 16px;
 }
 
-.main .user .text {
+.main .info .user .text {
     font-size: 34px;
     letter-spacing: 0.5px;
     font-weight: 300;
 }
 
-.main .user .favicon {
-    width: 52px;
-    height: 52px;
+.main .info .user .favicon {
+    margin-left: 2px;
+    width: 54px;
+    height: 54px;
+    opacity: 0.95;
 }
 
-.main .message {
+.main .info .message {
     margin: 0 40px;
     background: rgb(44, 44, 44);
     overflow: hidden;
 }
 
-.main .message .inner {
+.main .info .message .inner {
     display: none;
     padding: 4px;
     width: fit-content;
     white-space: nowrap;
 }
 
-.main .button-list {
+.main .info .button-list {
     display: flex;
     justify-content: center;
     gap: 32px;
-    margin: 32px 0;
+    margin: 28px 0;
 }
 
-.main .button-list a {
+.main .info .button-list a {
     display: block;
     padding: 8px 40px;
     border: solid 1px rgb(240, 240, 240);

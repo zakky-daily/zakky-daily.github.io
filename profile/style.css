@@ -1,26 +1,9 @@
-.main .title {
-    
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    gap: 8px;
-    margin: 24px 0;
-}
-
 .main .title .icon {
-    width: 80px;
-    height: 80px;
-    background: url("../icon.jpeg");
-    background-size: cover;
     border-radius: 50%;
 }
 
-.main .title span {
-    font-size: 36px;
-}
-
 .main .info {
-    margin: 24px 10%;
+    margin-bottom: 48px;
 }
 
 .main .info table {
@@ -29,18 +12,18 @@
 }
 
 .main .info table tr th {
-    padding: 12px 24px;
+    padding: 16px 24px;
     border: solid 1px rgb(240, 240, 240);
     font-weight: normal;
 }
 
 .main .info table tr td {
-    padding: 12px 24px;
+    padding: 16px 24px;
     border: solid 1px rgb(240, 240, 240);
 }
 
 .main .info table .space {
-    height: 36px;
+    height: 40px;
 }
 
 .main .info table tr td ul {

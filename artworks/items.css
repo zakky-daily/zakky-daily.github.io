@@ -1,0 +1,19 @@
+.main .items .item-unity .header {
+
+    background: url("unity-background.png");
+    background-size: cover;
+    background-position: center 40%;
+}
+
+.main .items .item-vr .header {
+
+    background: url("vr-background.png");
+    background-size: cover;
+    background-position: center 74%;
+}
+
+.main .items .item-vr .description .links .link-meta-quest-diary .header {
+
+    background: url("meta-quest-diary/header.jpg");
+    background-size: cover;
+}
