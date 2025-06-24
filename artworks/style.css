@@ -1,13 +1,13 @@
-.main .items {
-    margin: 0 0 48px 0;
+:root {
+    --item-border-color: rgb(255, 255, 255, 0.7);
 }
 
 .main .items .item {
-    margin: 32px 0;
-    border: solid 1px rgb(160, 160, 160);
+    margin: 29px 0;
 }
 
 .main .items .item .header {
+    position: relative;
     display: flex;
     align-items: center;
     box-sizing: border-box;
@@ -15,15 +15,17 @@
     width: 100%;
     cursor: pointer;
     user-select: none;
+    border: solid 1px var(--item-border-color);
+    z-index: 1;
 }
 
 .main .items .item .header .icon {
-    height: 68px;
+    height: 66px;
     margin-right: 16px;
 }
 
 .main .items .item .header span {
-    font-size: 38px;
+    font-size: 36px;
 }
 
 .main .items .item .header .arrow {
@@ -37,56 +39,49 @@
 }
 
 .main .items .item .detail {
+    transform: translateY(-1px);
     height: 0px;
     overflow: hidden;
+    border: dashed var(--item-border-color);
+    border-width: 0 1px 1px 1px;
     transition: 0.2s;
 }
 
-.main .items .item-active .detail {
-    height: fit-content;
-}
-
-.main .items .item .detail .vline {
-    width: 100%;
-    height: 1px;
-    background: rgb(160, 160, 160);
-}
-
 .main .items .item .detail .message {
-    margin: 40px 0;
+    margin: 36px 0;
     text-align: center;
 }
 
 .main .items .item .detail .links {
     display: flex;
-    justify-content: space-evenly;
+    justify-content: center;
     flex-wrap: wrap;
-    gap: 32px;
-    margin: 40px;
+    gap: 52px;
+    margin: 48px;
 }
 
 .main .items .item .detail .links .link {
-    padding: 12px;
-    width: 240px;
+    width: 280px;
     border-radius: 18px;
     transition: 0.2s;
 }
 
 .main .items .item .detail .links .link:hover {
-    background: rgb(255, 255, 255, 0.1);
+    transform: scale(1.05);
     cursor: pointer;
 }
 
 .main .items .item .detail .links .link img {
+    display: block;
     width: 100%;
     height: 180px;
     border-radius: 12px;
-    border: solid 1px rgb(200, 200, 200);
+    border: solid 1px var(--item-border-color);
 }
 
 .main .items .item .detail .links .link .title {
-    margin: 0px;
-    font-size: 20px;
+    margin: 12px 0;
+    font-size: 24px;
     text-align: center;
     text-overflow: ellipsis;
 }
@@ -94,7 +89,6 @@
 .main .items .item .detail .nolink {
     
     margin: 72px 40px;
-    font-size: 20px;
     color: gray;
     text-align: center;
 }

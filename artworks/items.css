@@ -1,19 +1,36 @@
 .main .items .item-unity .header {
-
-    background: url("unity-background.png");
+    background:
+        linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)),
+        url("unity-background.png");
     background-size: cover;
-    background-position: center 40%;
+    background-position: center 30%;
+}
+
+.main .items .item-web .header {
+    background:
+        linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+        url("web-background.jpg");
+    background-size: cover;
+    background-position: center 32%;
 }
 
 .main .items .item-vr .header {
-
-    background: url("vr-background.png");
+    background:
+        linear-gradient(rgba(0, 0, 0, 0.38), rgba(0, 0, 0, 0.38)),
+        url("vr-background.png");
     background-size: cover;
     background-position: center 74%;
 }
 
 .main .items .item-vr .description .links .link-meta-quest-diary .header {
-
     background: url("meta-quest-diary/header.jpg");
     background-size: cover;
+}
+
+.main .items .item-atcoder .header {
+    background:
+        linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)),
+        url("atcoder-background.jpg");
+    background-size: cover;
+    background-position: 80% 34%;
 }
