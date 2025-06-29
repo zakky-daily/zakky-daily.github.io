@@ -20,12 +20,6 @@
     <a href="..">ホーム</a>
     <a href="../profile">プロフィール</a>
     <a href="">制作物一覧</a>
-    <a href="">Unity</a>
-    <a href="">Web</a>
-    <a href="">VR</a>
-    <a href="">AtCoder</a>
-    <a href="">Music</a>
-    <a href="">Contact</a>
   </header>
   <div class="main">
     <div class="title">
@@ -34,9 +28,9 @@
     </div>
     <div class="items">
       <div class="item item-unity">
-        <div class="header" onclick="ExpandItem(this)">
+        <div class="header" onclick="ChangeActive(this)">
           <img src="../logos/unity.png" class="icon">
-          <span>Unity</span>
+          <span class="label">Unity</span>
           <img src="../icons/arrow.png" class="arrow">
         </div>
         <div class="detail">
@@ -44,61 +38,88 @@
             我がプログラミング人生の一丁目一番地。
           </div>
           <div class="nolink">
-            まだ作成記録はありません
+            まだ作成記録がありません
           </div>
         </div>
       </div>
       <div class="item item-web">
-        <div class="header" onclick="ExpandItem(this)">
-          <img src="../logos/html.png" class="icon">
-          <span>Web開発</span>
+        <div class="header" onclick="ChangeActive(this)">
+          <img src="../icons/world.png" class="icon">
+          <span class="label">Web制作</span>
           <img src="../icons/arrow.png" class="arrow">
         </div>
         <div class="detail">
           <div class="message">
-            最も自分を解放できる場所。
+            最も自由に自分を表現できる場所。
           </div>
-          <div class="nolink">
-            まだ作成記録はありません
+          <div class="links">
+            <div class="link link-mypage">
+              <div class="header">
+                <div class="category">
+                  <img class="icon" src="../icons/web.png">
+                </div>
+              </div>
+              <div class="text">
+                <div class="title">マイページ制作記</div>
+                <div class="message">2010年代の少しレトロな感じのwebサイトを作りたかった。</div>
+              </div>
+            </div>
+            <div class="link"></div>
           </div>
         </div>
       </div>
       <div class="item item-vr">
-        <div class="header"  onclick="ExpandItem(this)">
+        <div class="header"  onclick="ChangeActive(this)">
           <img src="../icons/vr.png" class="icon">
-          <span>VR</span>
+          <span class="label">VR</span>
           <img src="../icons/arrow.png" class="arrow">
         </div>
         <div class="detail">
           <div class="message">
             嫌いだけど興味の惹かれる業界について、<br>
-            確かな技術力と経験を得てから<br>
+            確かな技術力と経験を積んでから<br>
             肯定も、批判もしたいと思った。
           </div>
           <div class="links">
             <div class="link link-meta-quest-diary">
-              <img src="meta-quest-diary/header.jpg">
-              <div class="title">Meta Quest 体験記</div>
+              <div class="header">
+                <div class="category">
+                  <img class="icon" src="../logos/meta.png">
+                </div>
+              </div>
+              <div class="text">
+                <div class="title">Meta Quest 体験記</div>
+                <div class="message">「VRがスマホと同じくらい受け入れられることは絶対にないのか？」を焦点に、Meta Questを使っていく中で思った感想や批判、改善点を、開封初日から書き残していく。</div>
+              </div>
             </div>
             <div class="link link-meta-quest-flyboard">
-              <img src="meta-quest-flyboard/header.jpg">
-              <div class="title">Meta Quest 開発記①</div>
+              <div class="header">
+                <div class="category">
+                  <img class="icon" src="../logos/unity.png">
+                  <img class="icon" src="../logos/meta.png">
+                </div>
+              </div>
+              <div class="text">
+                <div class="title">フライボード制作記｜Meta Quest 開発記①</div>
+                <div class="message">Quest用アプリを一通り作れるようになるために選んだ題材。</div>
+              </div>
             </div>
           </div>
         </div>
       </div>
       <div class="item item-atcoder">
-        <div class="header" onclick="ExpandItem(this)">
+        <div class="header" onclick="ChangeActive(this)">
           <img src="../logos/atcoder.png" class="icon">
-          <span>AtCoder</span>
+          <span class="label">AtCoder</span>
           <img src="../icons/arrow.png" class="arrow">
         </div>
         <div class="detail">
           <div class="message">
-            目標は高く、進歩は着実に。
+            普段の開発が長期に及ぶ辛いものだからこそ、<br>
+            短時間に全てをかける競プロは気分転換になる。
           </div>
           <div class="nolink">
-            まだ作成記録はありません
+            まだ作成記録がありません
           </div>
         </div>
       </div>

@@ -1,36 +1,60 @@
 .main .items .item-unity .header {
     background:
-        linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)),
+        linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)),
         url("unity-background.png");
     background-size: cover;
     background-position: center 30%;
 }
 
+
+
 .main .items .item-web .header {
     background:
-        linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+        linear-gradient(rgba(0, 0, 0, 0.62), rgba(0, 0, 0, 0.62)),
         url("web-background.jpg");
     background-size: cover;
-    background-position: center 32%;
+    background-position: center 89%;
 }
+
+.main .items .item-web .detail .links .link-mypage .header {
+    background:
+        linear-gradient(rgba(0, 0, 0, 0.15), rgba(0, 0, 0, 0.15)),
+        url("mypage/header.png");
+    background-size: cover;
+    background-position: center 0;
+}
+
+
 
 .main .items .item-vr .header {
     background:
-        linear-gradient(rgba(0, 0, 0, 0.38), rgba(0, 0, 0, 0.38)),
+        linear-gradient(rgba(0, 0, 0, 0.62), rgba(0, 0, 0, 0.62)),
         url("vr-background.png");
     background-size: cover;
-    background-position: center 74%;
+    background-position: center 60%;
 }
 
-.main .items .item-vr .description .links .link-meta-quest-diary .header {
-    background: url("meta-quest-diary/header.jpg");
+.main .items .item-vr .detail .links .link-meta-quest-diary .header {
+    background:
+        linear-gradient(rgba(0, 0, 0, 0.25), rgba(0, 0, 0, 0.25)),
+        url("meta-quest-diary/header.jpg");
     background-size: cover;
 }
+
+.main .items .item-vr .detail .links .link-meta-quest-flyboard .header {
+    background:
+        linear-gradient(rgba(0, 0, 0, 0.15), rgba(0, 0, 0, 0.15)),
+        url("meta-quest-flyboard/header.jpg");
+    background-size: cover;
+    background-position: center 90%;
+}
+
+
 
 .main .items .item-atcoder .header {
     background:
-        linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)),
+        linear-gradient(rgba(0, 0, 0, 0.76), rgba(0, 0, 0, 0.76)),
         url("atcoder-background.jpg");
     background-size: cover;
-    background-position: 80% 34%;
+    background-position: center 95%;
 }

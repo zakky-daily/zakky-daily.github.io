@@ -7,7 +7,7 @@
     display: flex;
     gap: 12px;
     width: 100%;
-    aspect-ratio: 4.2;
+    height: 260px;
     min-height: 240px;
     overflow-x: scroll;
     scroll-snap-type: x mandatory;
@@ -34,54 +34,74 @@
 }
 
 .main .topics .scroll-frame .topic {
+    position: relative;
     scroll-snap-align: center;
     min-width: calc(100% - 72px);
     height: 100%;
 }
 
-.main .topics .scroll-frame .topic .content {
-    position: relative;
+.main .topics .scroll-frame .topic .category {
+    display: flex;
+    align-items: center;
+    gap: 6px;
+    margin: 6px;
+}
+
+.main .topics .scroll-frame .topic .category .icon {
+    display: block;
+    width: 52px;
+    height: 52px;
+}
+
+.main .topics .scroll-frame .topic .category .label {
+    font-size: 18px;
+}
+
+.main .topics .scroll-frame .topic .description {
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    padding: 12px;
     width: 100%;
-    height: 100%;
+    box-sizing: border-box;
+    text-align: right;
 }
 
-
-
-
-.main .info {
-    padding: 0 10% 0 10%;
+.main .topics .scroll-frame .topic .description .link {
+    text-decoration: underline;
 }
+
 
 .main .info .user {
-    margin: 36px 0;
+    margin: 32px 0;
     display: flex;
     align-items: center;
     justify-content: center;
 }
 
 .main .info .user .icon {
-    width: 92px;
-    height: 92px;
+    width: 90px;
+    height: 90px;
     border-radius: 50%;
-    margin-right: 16px;
+    margin-right: 15px;
 }
 
 .main .info .user .text {
-    font-size: 34px;
+    font-size: 32px;
     letter-spacing: 0.5px;
     font-weight: 300;
 }
 
 .main .info .user .favicon {
     margin-left: 2px;
-    width: 54px;
-    height: 54px;
+    width: 50px;
+    height: 50px;
     opacity: 0.95;
 }
 
 .main .info .message {
-    margin: 0 40px;
-    background: rgb(44, 44, 44);
+    margin: 0 100px;
+    background: #303030;
     overflow: hidden;
 }
 
@@ -96,7 +116,7 @@
     display: flex;
     justify-content: center;
     gap: 32px;
-    margin: 28px 0;
+    margin: 32px 0;
 }
 
 .main .info .button-list a {

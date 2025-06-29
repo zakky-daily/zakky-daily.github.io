@@ -1,35 +1,26 @@
-:root {
-    --item-border-color: rgb(255, 255, 255, 0.7);
-}
-
-.main .items .item {
-    margin: 29px 0;
-}
-
 .main .items .item .header {
     position: relative;
     display: flex;
     align-items: center;
     box-sizing: border-box;
-    padding: 7px 66px;
+    padding: 0 52px;
     width: 100%;
+    height: 76px;
     cursor: pointer;
-    user-select: none;
-    border: solid 1px var(--item-border-color);
     z-index: 1;
 }
 
 .main .items .item .header .icon {
-    height: 66px;
+    height: 54px;
     margin-right: 16px;
 }
 
-.main .items .item .header span {
-    font-size: 36px;
+.main .items .item .header .label {
+    font-size: 34px;
 }
 
 .main .items .item .header .arrow {
-    width: 48px;
+    width: 44px;
     margin-left: auto;
     transition: 0.2s;
 }
@@ -39,12 +30,10 @@
 }
 
 .main .items .item .detail {
-    transform: translateY(-1px);
-    height: 0px;
+    height: 0;
     overflow: hidden;
-    border: dashed var(--item-border-color);
-    border-width: 0 1px 1px 1px;
     transition: 0.2s;
+    box-sizing: border-box;
 }
 
 .main .items .item .detail .message {
@@ -54,41 +43,91 @@
 
 .main .items .item .detail .links {
     display: flex;
-    justify-content: center;
     flex-wrap: wrap;
-    gap: 52px;
-    margin: 48px;
+    gap: 42px;
+    margin: 36px 56px 52px 56px;
 }
 
 .main .items .item .detail .links .link {
-    width: 280px;
-    border-radius: 18px;
-    transition: 0.2s;
+    position: relative;
+    flex: 1 0 0;
+    box-sizing: border-box;
+    min-width: 260px;
+    border-radius: 4px;
 }
 
 .main .items .item .detail .links .link:hover {
-    transform: scale(1.05);
     cursor: pointer;
 }
 
-.main .items .item .detail .links .link img {
-    display: block;
-    width: 100%;
-    height: 180px;
-    border-radius: 12px;
-    border: solid 1px var(--item-border-color);
+.main .items .item .detail .links .link::before {
+    content: "";
+    position: absolute;
+    width: calc(100% + 24px);
+    height: calc(100% + 24px);
+    left: -12px;
+    top: -12px;
+    transition: 0.2s;
+    border: solid 1px transparent;
+    border-radius: 16px;
+    pointer-events: none;
 }
 
-.main .items .item .detail .links .link .title {
-    margin: 12px 0;
-    font-size: 24px;
-    text-align: center;
+.main .items .item .detail .links .link:hover::before {
+    border: solid 1px #606060;
+}
+
+.main .items .item .detail .links .link .header {
+    display: block;
+    padding: 0;
+    width: 100%;
+    height: 160px;
+    border-radius: 10px;
+}
+
+.main .items .item .detail .links .link .category {
+    display: flex;
+    align-items: center;
+    gap: 9px;
+    padding: 8px;
+    width: fit-content;
+    background: #0000006e;
+    border-radius: 0 0 10px 0;
+}
+
+.main .items .item .detail .links .link .category .icon {
+    display: block;
+    margin: 0;
+    width: 40px;
+    height: 40px;
+}
+
+.main .items .item .detail .links .link .text {
+    padding: 4px 8px 0 8px;
+}
+
+.main .items .item .detail .links .link .text .title {
+    display: block;
+    margin: 0;
+    font-size: 28px;
+    overflow: hidden;
     text-overflow: ellipsis;
+    white-space: nowrap;
+}
+
+.main .items .item .detail .links .link .text .message {
+    margin: 0;
+    width: 100%;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    text-align: left;
+    color: #d0d0d0;
 }
 
 .main .items .item .detail .nolink {
     
-    margin: 72px 40px;
+    margin: 64px 0 100px 0;
     color: gray;
     text-align: center;
 }

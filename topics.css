@@ -1,84 +1,22 @@
 .topic-sea {
 
-    background: url("blog/sea-niigata-photo.jpg");
+    background: url("blog/sea-niigata/background.jpg");
     background-size: cover;
     background-position: center 60%;
 }
-
-.topic-sea .content .caption {
-    position: absolute;
-    display: flex;
-    align-items: center;
-    margin: 8px;
-    right: 0;
-    bottom: 0;
-}
-
-.topic-sea .content .caption img {
-    margin-right: 6px;
-    height: 30px;
-    vertical-align: middle;
-}
-
-
-
 
 .topic-meta-quest-diary {
 
-    background: url("artworks/meta-quest-diary/header.jpg");
+    background:
+        linear-gradient(rgba(0, 0, 0, 0.35) 40%, rgba(0, 0, 0, 0.6)),
+        url("artworks/meta-quest-diary/header.jpg");
     background-size: cover;
-    background-position: center 60%;
+    background-position: center 40%;
 }
-
-.topic-meta-quest-diary .content .title {
-    position: absolute;
-    display: flex;
-    align-items: center;
-    margin: 14px;
-    gap: 0;
-}
-
-.topic-meta-quest-diary .content .title img {
-    margin-right: 12px;
-    height: 48px;
-    vertical-align: middle;
-}
-
-.topic-meta-quest-diary .content .title span {
-    font-size: 28px;
-    letter-spacing: 0.5px;
-}
-
-.topic-meta-quest-diary .content .description {
-    position: absolute;
-    display: flex;
-    align-items: center;
-    margin: 18px;
-    right: 0;
-    bottom: 0;
-}
-
-.topic-meta-quest-diary .content .description span {
-    font-size: 36px;
-}
-
-.topic-meta-quest-diary .content .description .vline {
-    margin: 0 10px;
-    width: 2.5px;
-    height: 52px;
-    background: rgb(240, 240, 240);
-}
-
-.topic-meta-quest-diary .content .description a {
-    font-size: 20px;
-}
-
-
-
 
 .topic-ever {
 
-    background: url("blog/ever.jpg");
+    background: url("blog/ever/background.jpg");
     background-size: cover;
     background-position: center 15%;
 }
