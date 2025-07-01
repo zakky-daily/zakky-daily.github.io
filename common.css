@@ -45,6 +45,27 @@ header a:hover {
 }
 
 
+.breadcrumbs {
+    display: flex;
+    align-items: center;
+    gap: 2px;
+    padding: 0 12px;
+}
+
+.breadcrumbs img {
+    width: 20px;
+    height: 20px;
+}
+
+.breadcrumbs .here {
+    color: #c0c0c0;
+}
+
+
+
+
+
+
 .main .title {
     
     display: flex;

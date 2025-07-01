@@ -8,6 +8,7 @@
   <title>制作物一覧｜zakky-dailyの開発記</title>
 
   <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-cookie/1.4.1/jquery.cookie.min.js"></script>
   <script src="content.js"></script>
 
   <link rel="stylesheet" href="../common.css">
@@ -28,10 +29,10 @@
     </div>
     <div class="items">
       <div class="item item-unity">
-        <div class="header" onclick="ChangeActive(this)">
+        <div class="header" onclick="ChangeActiveTab(this)">
           <img src="../logos/unity.png" class="icon">
           <span class="label">Unity</span>
-          <img src="../icons/arrow.png" class="arrow">
+          <img src="../icons/down-arrow.png" class="arrow">
         </div>
         <div class="detail">
           <div class="message">
@@ -43,10 +44,10 @@
         </div>
       </div>
       <div class="item item-web">
-        <div class="header" onclick="ChangeActive(this)">
+        <div class="header" onclick="ChangeActiveTab(this)">
           <img src="../icons/world.png" class="icon">
           <span class="label">Web制作</span>
-          <img src="../icons/arrow.png" class="arrow">
+          <img src="../icons/down-arrow.png" class="arrow">
         </div>
         <div class="detail">
           <div class="message">
@@ -56,6 +57,7 @@
             <div href="" class="link link-mypage">
               <a href="" class="content">
                 <div class="header">
+                  <div class="background"></div>
                   <div class="category">
                     <img class="icon" src="../icons/html.png">
                     <img class="icon" src="../icons/js.png">
@@ -71,10 +73,10 @@
         </div>
       </div>
       <div class="item item-vr">
-        <div class="header"  onclick="ChangeActive(this)">
+        <div class="header" onclick="ChangeActiveTab(this)">
           <img src="../icons/vr.png" class="icon">
           <span class="label">VR</span>
-          <img src="../icons/arrow.png" class="arrow">
+          <img src="../icons/down-arrow.png" class="arrow">
         </div>
         <div class="detail">
           <div class="message">
@@ -86,6 +88,7 @@
             <div class="link link-meta-quest-flyboard">
               <a href="" class="content">
                 <div class="header">
+                  <div class="background"></div>
                   <div class="category">
                     <img class="icon" src="../logos/unity.png">
                     <img class="icon" src="../logos/meta.png">
@@ -100,6 +103,7 @@
             <div class="link link-meta-quest-diary">
               <a href="meta-quest-diary/" class="content">
                 <div class="header">
+                  <div class="background"></div>
                   <div class="category">
                     <img class="icon" src="../logos/meta.png">
                   </div>
@@ -114,10 +118,10 @@
         </div>
       </div>
       <div class="item item-atcoder">
-        <div class="header" onclick="ChangeActive(this)">
+        <div class="header" onclick="ChangeActiveTab(this)">
           <img src="../logos/atcoder.png" class="icon">
           <span class="label">AtCoder</span>
-          <img src="../icons/arrow.png" class="arrow">
+          <img src="../icons/down-arrow.png" class="arrow">
         </div>
         <div class="detail">
           <div class="message">

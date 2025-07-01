@@ -8,7 +8,18 @@
     height: 76px;
     cursor: pointer;
     z-index: 1;
+    transition: 0.2s;
+    user-select: none;
 }
+
+.main .items .item-active .header {
+    filter: brightness(1.17);
+}
+
+.main .items .item-noactive .header {
+    filter: brightness(0.7);
+}
+
 
 .main .items .item .header .icon {
     height: 54px;
@@ -20,7 +31,7 @@
 }
 
 .main .items .item .header .arrow {
-    width: 44px;
+    width: 42px;
     margin-left: auto;
     transition: 0.2s;
 }
@@ -65,38 +76,67 @@
     position: relative;
     display: block;
     margin: 12px 14px;
-    padding: 8px;
-    background: #2c2c2c;
+    padding: 6px;
+    background: #2a2a2a;
     text-decoration: none;
-    transition: 0.3s;
 }
 
 .main .items .item .detail .links .link .content .header {
+    position: relative;
     display: block;
     padding: 0;
     width: 100%;
-    height: 160px;
+    height: 140px;
     pointer-events: none;
+    filter: brightness(1.0);
 }
 
-.main .items .item .detail .links .link .content .category {
+.main .items .item .detail .links .link .content .header .background {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    transition: 0.2s;
+}
+
+.main .items .item .detail .links .link .content:hover .header .background {
+    filter: brightness(0.45);
+}
+
+.main .items .item .detail .links .link .content .header .category {
+    position: absolute;
     display: flex;
     align-items: center;
     gap: 9px;
     padding: 8px;
     width: fit-content;
-    background: #2c2c2ce0;
+    background: #2a2a2a;
 }
 
-.main .items .item .detail .links .link .content .category .icon {
+.main .items .item .detail .links .link .content .header .category .icon {
     display: block;
     margin: 0;
-    width: 32px;
-    height: 32px;
+    width: 30px;
+    height: 30px;
+}
+
+.main .items .item .detail .links .link .content .header::after {
+    content: "詳細を見る！";
+    position: absolute;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 100%;
+    color: transparent;
+    transition: 0.2s;
+}
+
+.main .items .item .detail .links .link .content:hover .header::after {
+    color: white;
 }
 
 .main .items .item .detail .links .link .content .text {
-    padding: 8px 12px 0 12px;
+    padding: 6px 12px 0 12px;
 }
 
 .main .items .item .detail .links .link .content .text .title {
