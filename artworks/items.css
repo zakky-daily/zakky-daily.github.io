@@ -1,6 +1,6 @@
-.main .items .item-unity .header {
+.main .items .item-unity > .header {
     background:
-        linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)),
+        linear-gradient(rgba(0, 0, 0, 0.45), rgba(0, 0, 0, 0.45)),
         url("unity-background.png");
     background-size: cover;
     background-position: center 30%;
@@ -8,9 +8,9 @@
 
 
 
-.main .items .item-web .header {
+.main .items .item-web > .header {
     background:
-        linear-gradient(rgba(0, 0, 0, 0.62), rgba(0, 0, 0, 0.62)),
+        linear-gradient(rgba(0, 0, 0, 0.49), rgba(0, 0, 0, 0.49)),
         url("web-background.jpg");
     background-size: cover;
     background-position: center 89%;
@@ -26,12 +26,20 @@
 
 
 
-.main .items .item-vr .header {
+.main .items .item-vr > .header {
     background:
-        linear-gradient(rgba(0, 0, 0, 0.62), rgba(0, 0, 0, 0.62)),
+        linear-gradient(rgba(0, 0, 0, 0.48), rgba(0, 0, 0, 0.48)),
         url("vr-background.png");
     background-size: cover;
     background-position: center 60%;
+}
+
+.main .items .item-vr .detail .links .link-meta-quest-flyboard .header {
+    background:
+        linear-gradient(rgba(0, 0, 0, 0.25), rgba(0, 0, 0, 0.25)),
+        url("meta-quest-flyboard/header.jpg");
+    background-size: cover;
+    background-position: center 90%;
 }
 
 .main .items .item-vr .detail .links .link-meta-quest-diary .header {
@@ -41,19 +49,11 @@
     background-size: cover;
 }
 
-.main .items .item-vr .detail .links .link-meta-quest-flyboard .header {
+
+
+.main .items .item-atcoder > .header {
     background:
-        linear-gradient(rgba(0, 0, 0, 0.15), rgba(0, 0, 0, 0.15)),
-        url("meta-quest-flyboard/header.jpg");
-    background-size: cover;
-    background-position: center 90%;
-}
-
-
-
-.main .items .item-atcoder .header {
-    background:
-        linear-gradient(rgba(0, 0, 0, 0.76), rgba(0, 0, 0, 0.76)),
+        linear-gradient(rgba(0, 0, 0, 0.66), rgba(0, 0, 0, 0.66)),
         url("atcoder-background.jpg");
     background-size: cover;
     background-position: center 95%;

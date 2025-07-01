@@ -37,97 +37,91 @@
 }
 
 .main .items .item .detail .message {
-    margin: 36px 0;
+    margin: 36px 0 0 0;
     text-align: center;
 }
 
 .main .items .item .detail .links {
     display: flex;
     flex-wrap: wrap;
-    gap: 42px;
-    margin: 36px 56px 52px 56px;
+    margin: 18px 36px 38px 36px;
+}
+
+.main .items .item .detail .links::after {
+    content: "";
+    flex: 1 0 0;
+    box-sizing: border-box;
+    min-width: 300px;
 }
 
 .main .items .item .detail .links .link {
     position: relative;
     flex: 1 0 0;
     box-sizing: border-box;
-    min-width: 260px;
-    border-radius: 4px;
+    min-width: 300px;
 }
 
-.main .items .item .detail .links .link:hover {
-    cursor: pointer;
+.main .items .item .detail .links .link .content {
+    position: relative;
+    display: block;
+    margin: 12px 14px;
+    padding: 8px;
+    background: #2c2c2c;
+    text-decoration: none;
+    transition: 0.3s;
 }
 
-.main .items .item .detail .links .link::before {
-    content: "";
-    position: absolute;
-    width: calc(100% + 24px);
-    height: calc(100% + 24px);
-    left: -12px;
-    top: -12px;
-    transition: 0.2s;
-    border: solid 1px transparent;
-    border-radius: 16px;
-    pointer-events: none;
-}
-
-.main .items .item .detail .links .link:hover::before {
-    border: solid 1px #606060;
-}
-
-.main .items .item .detail .links .link .header {
+.main .items .item .detail .links .link .content .header {
     display: block;
     padding: 0;
     width: 100%;
     height: 160px;
-    border-radius: 10px;
+    pointer-events: none;
 }
 
-.main .items .item .detail .links .link .category {
+.main .items .item .detail .links .link .content .category {
     display: flex;
     align-items: center;
     gap: 9px;
     padding: 8px;
     width: fit-content;
-    background: #0000006e;
-    border-radius: 0 0 10px 0;
+    background: #2c2c2ce0;
 }
 
-.main .items .item .detail .links .link .category .icon {
+.main .items .item .detail .links .link .content .category .icon {
     display: block;
     margin: 0;
-    width: 40px;
-    height: 40px;
+    width: 32px;
+    height: 32px;
 }
 
-.main .items .item .detail .links .link .text {
-    padding: 4px 8px 0 8px;
+.main .items .item .detail .links .link .content .text {
+    padding: 8px 12px 0 12px;
 }
 
-.main .items .item .detail .links .link .text .title {
+.main .items .item .detail .links .link .content .text .title {
     display: block;
     margin: 0;
-    font-size: 28px;
+    font-size: 24px;
     overflow: hidden;
     text-overflow: ellipsis;
     white-space: nowrap;
 }
 
-.main .items .item .detail .links .link .text .message {
+.main .items .item .detail .links .link .content .text .message {
     margin: 0;
     width: 100%;
     overflow: hidden;
     text-overflow: ellipsis;
     white-space: nowrap;
     text-align: left;
-    color: #d0d0d0;
+    color: #c8c8c8;
+    font-size: 14px;
 }
 
 .main .items .item .detail .nolink {
     
-    margin: 64px 0 100px 0;
+    margin: 68px 0 96px 0;
     color: gray;
     text-align: center;
 }

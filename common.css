@@ -102,5 +102,7 @@ footer .link a:hover img {
 footer .copyright {
     margin: 20px 0;
     text-align: center;
+    color: #c0c0c0;
+    font-size: 15px;
 }
 
